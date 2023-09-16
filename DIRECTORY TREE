@@ -1,0 +1,15 @@
+project/
+│
+├── floyds_algorithm/
+│   ├── __init__.py
+│   ├── floyds_recursive.py
+│   └── floyds_iterative.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_floyds_recursive.py
+│   └── test_floyds_iterative.py
+│
+├── requirements.txt
+├── README.md
+└── report.md
