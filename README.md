@@ -22,4 +22,4 @@ To set up and use this project, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone <(https://github.com/RitikaGupta8130/Python_Project/blob/main/README.md)https://github.com/RitikaGupta8130/Python_Project/blob/main/README.md>
+   git clone <(https://github.com/RitikaGupta8130/Python_Project/blob/main/README.md)>
