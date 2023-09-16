@@ -1,0 +1,17 @@
+# tests/performance_test_floyds_recursive.py
+import timeit
+from floyds_algorithm.floyds_recursive import floyds_recursive
+
+def generate_random_graph(size):
+    # Create a random adjacency matrix for testing.
+    pass
+
+def performance_test_floyds_recursive():
+    sizes = [10, 20, 30, 40]  # Adjust the sizes as needed
+    for size in sizes:
+        graph = generate_random_graph(size)
+        time_taken = timeit.timeit(lambda: floyds_recursive(graph, size), number=10)
+        print(f"Size {size}: {time_taken} seconds")
+
+if __name__ == '__main__':
+    performance_test_floyds_recursive()
