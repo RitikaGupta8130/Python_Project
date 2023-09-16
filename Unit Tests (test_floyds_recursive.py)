@@ -1,0 +1,22 @@
+# tests/test_floyds_recursive.py
+import unittest
+from floyds_algorithm.floyds_recursive import floyds_recursive
+
+class TestFloydsRecursive(unittest.TestCase):
+    def test_floyds_recursive(self):
+        graph = [
+            [0, 3, float('inf'), 7],
+            [8, 0, 2, float('inf')],
+            [5, float('inf'), 0, 1],
+            [2, float('inf'), float('inf'), 0],
+        ]
+        expected_result = [
+            [0, 3, 5, 6],
+            [5, 0, 2, 3],
+            [3, 6, 0, 1],
+            [2, 5, 7, 0],
+        ]
+        self.assertEqual(floyds_recursive(graph, 4), expected_result)
+
+if __name__ == '__main__':
+    unittest.main()
